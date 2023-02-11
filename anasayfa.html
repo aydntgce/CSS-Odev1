@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+    <h1 style="text-align:center">Mama Dükkanım</h1>
+    <p>Mama dükkanım sitemize hoşgeldiniz. Bu sitede evcil dostlarınıza ayrıca dışarıdaki dostlarımıza en uygun fiyatlı ve en kaliteli mamaları bulabilirsiniz.
+        Uygun fiyatlı ve kaliteli mamalarımızı <a href="urunler.html">Ürünlerimiz</a> sayfasından ziyaret edip inceleyebilirsiniz.
+        <a href="anasayfa.html">Ana Sayfamızdan</a> ürünlerimizi inceleyebilirsiniz. <a href="hakkimizda.html">Hakkımızda</a> bölümünden kuruluş, vizyon ve misyonumuzu 
+        görüp değerlendirmede bulunabilirsiniz. Mama dükkanım web sitesini evcil doslarımızın sahipleriyle birlikte uzun ve sağlıklı bir yaşamları olması için ve bunun 
+        elimizden geldiğince en uygun, az maliyetli bir şekilde kişilere ulaştırılmasıdır.
+    </p>
+    <!--div baslangıc-->
+    <div class="welcome NotEntry" id="divMemberPanel">
+        <div class="memberWelcomeContent" id="divMemberWelcomeContent"><ul>
+            <li class="headerUyeGiris">
+                <a href="javascript:void(0);" onclick="window.mem.init.bind('login');" title="Hesabım">
+                    Üye Girişi
+                </a>
+            </li>
+            <li class="headerUyeOl">
+                <a href="javascript:void(0);" onclick="window.mem.init.bind('quickmembership')" title="Üye Ol">
+                    Üye Ol
+                </a>
+            </li>
+            <li class="headerSocialConnect" style="display:none;">
+                <div id="divFacebookLoginContainer" class="FacebookLoginContainer  baglanButton">
+                    <a id="btnFaceLogin" onclick="doSocialLogin(1,true)"> Facebook İle Bağlan</a>
+                </div>
+                <div id="divGoogleLoginContainer" class="GoogleLoginContainer baglanButton">
+                    <a id="btnGoogleLogin" onclick="doSocialLogin(3, true)">Google İle Bağlan</a>
+                </div>
+        
+            </li>
+        </ul>
+        </div>
+        </div>
+
+    <div id="divTopProductSearch" class="searchContent ">
+        <div class="search" id="divArama">
+        <button class="ButtonMic" id="start_button" type="button" onclick="return startButton(event);" style="display: none; cursor: pointer;">
+        <img alt="Start" id="start_img" src="/Scripts/speech/mic.gif" width="32"></button>
+        <input name="ctl00$YeniHeader$txtbxArama" type="text" id="txtbxArama" tabindex="-1" onkeypress="return ProductSeachTopOnKeyPress(event)" class="urunSearchAC rsbInput ticimaxSearchInput ticiComplete" autocomplete="off" inputmode="search" placeholder="Arama">
+        <input type="button" name="" onclick="ProductSearchTop()" id="btnKelimeAra" class="rsbButton" value="Ara" title="Ara">
+        </div>
+      <!--div bitis-->  
+
+    <a href="anasayfa.html" 
+    style="position: absolute;
+    left: 580px;
+    top:60px;">
+    Ana Sayfa
+</a>
+    <a href="urunler.html" 
+    style="position:absolute;
+    left: 670px;
+    top: 60px;">
+    Ürünlerimiz
+</a>
+    <a href="hakkimizda.html"
+    style="position: absolute;
+    left: 770px;
+    top: 60px;">
+    Hakkımızda
+    </a>
+    <h3 style="text-align: center;">Ana Sayfa</h3>
+    <p>Mama Dükkanı sitemize hoşgeldiniz! En uygun fiyatlı, kaliteli ve evcil dostlarımız için en sağlıklı ürünleri barındıran sitemiz artık online siparişlerde 1 gün içinde kargoya verilecek şekilde sizlere hizmet sunmaktadır.
+        "İnsan ne yerse odur" cümlesinin aynısı evcil dostlarımız içinde geçerli. Ne kadar besin değeri yüksek mamalarla beslenirlerse o kadar sağlıklı ve uzun ömürlü olurlar. 
+        Bu yüzden kendi kimya sanayimizi geliştirip en uygun şekilde mal ederek bu ürünleri sizlere sunduk. Ürün memnuniyeti veya memnuniyetsizliğiniz olursa sitemizde olan yorumlar kısmında bizimle paylaşmanızı ister, iyi alışverişler dileriz. :)
+    </p>
+    <h3>Sitemizde Bulunan Ürünler</h3> 
+    <article>
+        <ul>
+            <li>Yetişkin Kedi Mamaları</li>
+            <li>Yavru Kedi Mamaları</li>
+            <li>Yetişkin Köpek Mamaları</li>
+            <li>Yavru Köpek Mamaları</li>
+            <li>Kuş Yemleri</li>
+            <li>Hamster Yemleri</li>
+            <li>Tavşan Yemleri</li>
+            <li>Balık Yemleri</li>
+        </ul>
+    </article>
+    <h3>Sitemize Yeni Eklenen Ürünler</h3>
+    <article>
+    <ul>
+        <li>Mama Kabı</li>
+        <li>Su Kabı</li>
+        <li>Kedi-Köpek Tasmas</li>
+        <li>Hamster Kemirme Taşı</li>
+        <li>Akvaryum</li>
+        <li>Kedi Otu</li>
+    </ul>
+</article>
+
+</body>
+</html>
