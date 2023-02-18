@@ -12,6 +12,7 @@ h1 {
 }
 body {
     background-color:rgb(216, 140, 114) ;
+    text-align: center;
 }
 a {
     color:rgb(110, 23, 23)
@@ -22,6 +23,6 @@ h1 {
 h3 {
     color:rgb(152, 86, 38)
 }
-ul.li {
-    list-style-position:outside;
+ul {
+    list-style-position:inside;
 }
